@@ -1,0 +1,27 @@
+// Papri Sen
+// 24070123070
+// A3
+
+#include <iostream>
+using namespace std;
+int add_n(int n){
+    if(n==0){
+        return 0;
+    }
+    else{
+        return n+add_n(n-1);
+    }
+}
+int main() {
+    int n;
+    cout << "Enter Number to find addition: ";
+    cin >> n;
+    cout << "Addition is " << add_n(n);
+    return 0;
+}
+
+/* 
+Outputs:
+Enter Number to find addition: 10
+Addition is 55
+*/
